@@ -1,31 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class UIInventory : MonoBehaviour
 {
     [SerializeField] private UISlot slotPrefab;
     [SerializeField] private Transform slotParent;
+    [SerializeField] private Text inventoryCounts;
     private List<UISlot> slotList = new List<UISlot>();
 
     void Start()
     {
-        SetInventoryUI();
+        SetInventoryUI(50);
+        UpdateInventoryUI(GameManager.Instance.player.inventory);
     }
 
-    private void SetInventoryUI()
+    void Update()
     {
-        int inventorySize = 30; // 예: 30칸
 
-        for (int i = 0; i < inventorySize; i++)
+    }
+
+    public void SetInventoryUI(int slotCount)
+    {
+        for (int i = 0; i < slotCount; i++)
         {
             UISlot newSlot = Instantiate(slotPrefab, slotParent);
             newSlot.SetItem(null); // 초기엔 빈 슬롯
             slotList.Add(newSlot);
         }
+        inventoryCounts.text = slotCount.ToString();
     }
-
-    // 아이템을 인벤토리에 반영하는 메서드도 추가 가능
+    
     public void UpdateInventoryUI(List<ItemData> items)
     {
         for (int i = 0; i < slotList.Count; i++)

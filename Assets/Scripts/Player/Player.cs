@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public int Defense { get; private set; }
     public float Critical { get; private set; }
 
+    public List<ItemData> inventory;
+
     public Player(string name, int level, float hp, int attack, int defense, float critical )
     {
         Name = name;
@@ -19,10 +21,11 @@ public class Player : MonoBehaviour
         Attack = attack;
         Defense = defense;
         Critical = critical ;
+        inventory = new List<ItemData>();
     }
 
-    public void Awake()
+    public void SetBasicItems(List<ItemData> startingItems)
     {
-        
+        inventory.AddRange(startingItems);
     }
 }

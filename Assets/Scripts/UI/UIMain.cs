@@ -39,6 +39,7 @@ public class UIMain : MonoBehaviour
     {
         UIManager.instance.OpenUI(UIManager.instance.inventoryUI.gameObject);
         currentOpenUI = UIManager.instance.inventoryUI.gameObject;
+        UIManager.instance.inventoryUI.UpdateInventoryUI(GameManager.Instance.player.inventory);
         
         HideButtonPanel();
         ShowBackButton();
@@ -80,9 +81,9 @@ public class UIMain : MonoBehaviour
 
     public void SetPlayerUI(Player player)
     {
-        nameText.text = player.Name;
-        levelText.text = $"LV.{player.Level.ToString()}";
-        hpText.text = player.HP.ToString();
+        nameText.text = GameManager.Instance.player.Name;
+        levelText.text = $"LV.{GameManager.Instance.player.Level.ToString()}";
+        hpText.text = GameManager.Instance.player.HP.ToString();
     }
     
     

@@ -7,8 +7,10 @@ public class UISlot : MonoBehaviour
 {
     [SerializeField] private Image itemIcon;
     [SerializeField] private Text itemCountText;
+    [SerializeField] private Image backGround;
 
     private ItemData itemData;
+    public int quantity;
 
     public void SetItem(ItemData item)
     {
@@ -21,7 +23,7 @@ public class UISlot : MonoBehaviour
         if (itemData != null)
         {
             itemIcon.sprite = itemData.icon;
-            //itemCountText.text = itemData.count.ToString();
+            itemCountText.text = quantity > 1 ? quantity.ToString() : string.Empty;
         }
         else
         {

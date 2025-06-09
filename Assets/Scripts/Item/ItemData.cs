@@ -12,6 +12,7 @@ public enum ItemType
 
 public enum EquipType
 {
+    None,
     Weapon,
     Amor,
     Helmet,
@@ -28,6 +29,9 @@ public class ItemData : ScriptableObject
     public ItemType type;
     public Sprite icon;
     public GameObject prefab;
+    
+    [Header("Consumable")]
+    public int healValue;
     
     [Header("Stacking")]
     public bool canStack;

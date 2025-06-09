@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
     public void Start()
     {
         SetUI();
+        
     }
 
     public void SetUI()
