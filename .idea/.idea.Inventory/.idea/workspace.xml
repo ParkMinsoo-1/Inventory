@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="96bdf6fd-e71e-49de-9dcb-362dcd01ed5c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/Full Spritesheet/64x64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/Full Spritesheet/64x64.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/RPG Maker MV and MZ/IconSet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/RPG Maker MV and MZ/IconSet.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIMain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIInventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIInventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIMain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIMain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIStatus.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749431195382</updated>
       <workItem from="1749431197393" duration="611000" />
-      <workItem from="1749438749324" duration="5574000" />
+      <workItem from="1749438749324" duration="9552000" />
     </task>
     <servers />
   </component>

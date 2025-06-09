@@ -9,14 +9,18 @@ public class UIMain : MonoBehaviour
     [SerializeField] private Button Status;
     [SerializeField] private Button Inventory;
     [SerializeField] private Button BackButton;
+    [SerializeField] public UIMainStatus playerUI;
+    
+    
 
     private GameObject currentOpenUI = null;
 
-    public void Awake()
+    public void Start()
     {
         Status.onClick.AddListener(() => {OpenStatusUI();});
         Inventory.onClick.AddListener(() => {OpenInventoryUI();});
         BackButton.onClick.AddListener(() =>{CallBackMainUI(); });
+        SetPlayerUI(GameManager.Instance.player);
     }
 
     void OpenStatusUI()
@@ -69,6 +73,11 @@ public class UIMain : MonoBehaviour
         
         ShowButtonPanel();
         HideBackButton();
+    }
+
+    public void SetPlayerUI(Player player)
+    {
+        playerUI.SetPlayerUI(player);
     }
     
     
