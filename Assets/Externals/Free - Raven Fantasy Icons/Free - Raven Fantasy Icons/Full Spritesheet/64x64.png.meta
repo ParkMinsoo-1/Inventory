@@ -156,6 +156,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Basic_Axe
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2886
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7583607d580f6ef40b4cd47ca4b6e716
+      internalID: -591411804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong_Axe
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2881
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b73a40310c38c7429279e3921ce4d25
+      internalID: -390620615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic_Amor
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1030
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d70fd3eeaf8614681262757373ca8e
+      internalID: -1083867165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong_Amor
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1032
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e50b0a5aeaefd4a9c31afd82d370c6
+      internalID: -482715344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong_Helmet
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1094
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab44e77f3d492f40a57a15078cfb215
+      internalID: -92476475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic_Helmet
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1094
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc7588b1471f3a408b6854d2fa3ac5f
+      internalID: 1448635164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic_Boots
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 962
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8603e6a43d788cd4787207217ef48764
+      internalID: 1338321951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong_Boots
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 962
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ab6e6684f48d54eb57a04fd4bb6fb0
+      internalID: 431445109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -167,8 +335,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Basic_Amor: -1083867165
+      Basic_Axe: -591411804
+      Basic_Boots: 1338321951
+      Basic_Helmet: 1448635164
       Gold: 1236904016
       Gold1: -1958985871
+      Strong_Amor: -482715344
+      Strong_Axe: -390620615
+      Strong_Boots: 431445109
+      Strong_Helmet: -92476475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

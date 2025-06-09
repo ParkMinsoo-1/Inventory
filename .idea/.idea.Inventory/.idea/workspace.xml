@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96bdf6fd-e71e-49de-9dcb-362dcd01ed5c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/Full Spritesheet/64x64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Externals/Free - Raven Fantasy Icons/Free - Raven Fantasy Icons/Full Spritesheet/64x64.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <updated>1749431195382</updated>
       <workItem from="1749431197393" duration="611000" />
       <workItem from="1749438749324" duration="14916000" />
-      <workItem from="1749454070688" duration="997000" />
+      <workItem from="1749454070688" duration="1661000" />
     </task>
     <servers />
   </component>
