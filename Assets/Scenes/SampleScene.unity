@@ -3261,7 +3261,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329837408}
-  - component: {fileID: 1329837409}
   m_Layer: 5
   m_Name: CharacterUI
   m_TagString: Untagged
@@ -3291,22 +3290,6 @@ RectTransform:
   m_AnchoredPosition: {x: -657.9997, y: -92}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1329837409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329837407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad940a4887c5344d93c0da344e184a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 500678253}
-  levelText: {fileID: 989050363}
-  hpText: {fileID: 1790799331}
-  player: {fileID: 1203088405}
 --- !u!1 &1330470979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3916,7 +3899,9 @@ MonoBehaviour:
   Status: {fileID: 1143097023}
   Inventory: {fileID: 784795248}
   BackButton: {fileID: 1539293415}
-  playerUI: {fileID: 1329837409}
+  nameText: {fileID: 500678253}
+  levelText: {fileID: 989050363}
+  hpText: {fileID: 1790799331}
 --- !u!1 &1579212125
 GameObject:
   m_ObjectHideFlags: 0

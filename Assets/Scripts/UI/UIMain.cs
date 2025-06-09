@@ -9,7 +9,11 @@ public class UIMain : MonoBehaviour
     [SerializeField] private Button Status;
     [SerializeField] private Button Inventory;
     [SerializeField] private Button BackButton;
-    [SerializeField] public UIMainStatus playerUI;
+    
+    [Header("Player")]
+    [SerializeField] private Text nameText;
+    [SerializeField] private Text levelText;
+    [SerializeField] private Text hpText;
     
     
 
@@ -77,7 +81,9 @@ public class UIMain : MonoBehaviour
 
     public void SetPlayerUI(Player player)
     {
-        playerUI.SetPlayerUI(player);
+        nameText.text = player.Name;
+        levelText.text = $"LV.{player.Level.ToString()}";
+        hpText.text = player.HP.ToString();
     }
     
     
