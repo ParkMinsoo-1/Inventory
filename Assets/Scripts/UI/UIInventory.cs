@@ -11,13 +11,8 @@ public class UIInventory : MonoBehaviour
 
     void Start()
     {
-        SetInventoryUI(50);
+        SetInventoryUI(16);
         UpdateInventoryUI(GameManager.Instance.player.inventory);
-    }
-
-    void Update()
-    {
-
     }
 
     public void SetInventoryUI(int slotCount)
@@ -28,17 +23,25 @@ public class UIInventory : MonoBehaviour
             newSlot.SetItem(null); // 초기엔 빈 슬롯
             slotList.Add(newSlot);
         }
-        inventoryCounts.text = slotCount.ToString();
+        
     }
     
     public void UpdateInventoryUI(List<ItemData> items)
     {
+        int itemCount = 0;
+        
         for (int i = 0; i < slotList.Count; i++)
         {
-            if (i < items.Count)
+            if (i < items.Count && itemCount != null)
+            {
                 slotList[i].SetItem(items[i]);
+                itemCount++;
+            }
+            
             else
                 slotList[i].SetItem(null);
         }
+        
+        inventoryCounts.text = $"{itemCount} / {slotList.Count}";
     }
 }

@@ -2800,11 +2800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc7f01df2a873d449fe4da9323befd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 11400000, guid: 6459e4bf48584b646bbd11e8dc6fe7b2, type: 2}
-  - {fileID: 11400000, guid: 2946c683d9de67548aa5983311156c42, type: 2}
-  - {fileID: 11400000, guid: dff09e0cbcbbecd4183ae9d27ba322de, type: 2}
-  - {fileID: 11400000, guid: 142a7d09540eaa440845ff0377c65412, type: 2}
+  inventory: []
 --- !u!1 &1268788568
 GameObject:
   m_ObjectHideFlags: 0
