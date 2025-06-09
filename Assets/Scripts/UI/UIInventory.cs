@@ -11,7 +11,7 @@ public class UIInventory : MonoBehaviour
 
     void Start()
     {
-        SetInventoryUI(16);
+        SetInventoryUI(10);
         UpdateInventoryUI(GameManager.Instance.player.inventory);
     }
 
