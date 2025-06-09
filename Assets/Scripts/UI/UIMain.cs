@@ -24,7 +24,6 @@ public class UIMain : MonoBehaviour
         Status.onClick.AddListener(() => {OpenStatusUI();});
         Inventory.onClick.AddListener(() => {OpenInventoryUI();});
         BackButton.onClick.AddListener(() =>{CallBackMainUI(); });
-        SetPlayerUI(GameManager.Instance.player);
     }
 
     void OpenStatusUI()

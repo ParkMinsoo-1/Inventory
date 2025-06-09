@@ -28,16 +28,15 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        SetUI();
+    }
+
     public void SetUI()
     {
-        // if (GameManager.Instance != null && GameManager.Instance.player != null)
-        // {
-        //     mainUI.playerUI.SetPlayerUI(GameManager.Instance.player);
-        // }
-        // else
-        // {
-        //     Debug.LogWarning("Player가 아직 생성되지 않았습니다.");
-        // }
+        mainUI.SetPlayerUI(GameManager.Instance.player);
+        statusUI.SetPlayerStatus(GameManager.Instance.player);
         
         mainUI.gameObject.SetActive(true);
         statusUI.gameObject.SetActive(false);

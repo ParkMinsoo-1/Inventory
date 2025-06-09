@@ -3608,6 +3608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8786beaeeccb3594fb0aa06ff3c79673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackValue: {fileID: 554218813}
+  defenseValue: {fileID: 157049814}
+  hpValue: {fileID: 1088792195}
+  criValue: {fileID: 1579212127}
+  player: {fileID: 0}
 --- !u!1 &1539293411
 GameObject:
   m_ObjectHideFlags: 0

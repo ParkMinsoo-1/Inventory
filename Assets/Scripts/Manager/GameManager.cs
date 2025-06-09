@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
             SetPlayer();                   // Player 데이터 세팅
         }
         else

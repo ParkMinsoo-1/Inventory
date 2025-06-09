@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="96bdf6fd-e71e-49de-9dcb-362dcd01ed5c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIMain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIMainStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIMainStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIStatus.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749431195382</updated>
       <workItem from="1749431197393" duration="611000" />
-      <workItem from="1749438749324" duration="10259000" />
+      <workItem from="1749438749324" duration="11719000" />
     </task>
     <servers />
   </component>
