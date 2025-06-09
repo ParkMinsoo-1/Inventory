@@ -1,18 +1,75 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIMain : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject ButtonPanel;
+    [SerializeField] private Button Status;
+    [SerializeField] private Button Inventory;
+    [SerializeField] private Button BackButton;
+
+    private GameObject currentOpenUI = null;
+
+    public void Awake()
     {
-        
+        Status.onClick.AddListener(() => {OpenStatusUI();});
+        Inventory.onClick.AddListener(() => {OpenInventoryUI();});
+        BackButton.onClick.AddListener(() =>{CallBackMainUI(); });
     }
 
-    // Update is called once per frame
-    void Update()
+    void OpenStatusUI()
     {
+        UIManager.instance.OpenUI(UIManager.instance.statusUI.gameObject);
+        currentOpenUI = UIManager.instance.statusUI.gameObject;
         
+        HideButtonPanel();
+        ShowBackButton();
     }
+
+    void OpenInventoryUI()
+    {
+        UIManager.instance.OpenUI(UIManager.instance.inventoryUI.gameObject);
+        currentOpenUI = UIManager.instance.inventoryUI.gameObject;
+        
+        HideButtonPanel();
+        ShowBackButton();
+    }
+    
+    public void HideButtonPanel()
+    {
+        ButtonPanel.SetActive(false);
+    }
+    
+    public void ShowButtonPanel()
+    {
+        ButtonPanel.SetActive(true);
+    }
+
+    
+    public void ShowBackButton()
+    {
+        BackButton.gameObject.SetActive(true);
+
+    }
+
+    public void HideBackButton()
+    {
+        BackButton.gameObject.SetActive(false);
+
+    }
+    
+    public void CallBackMainUI()
+    {
+        if (currentOpenUI != null)
+        {
+            UIManager.instance.CloseUI(currentOpenUI);
+        }
+        
+        ShowButtonPanel();
+        HideBackButton();
+    }
+    
+    
 }
