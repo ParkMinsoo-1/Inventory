@@ -27,7 +27,7 @@ public class Equipment : MonoBehaviour
         player = FindObjectOfType<Player>();
         
     }
-    public void Equip(ItemData data)
+    public void Equip(ItemData data)//과연 이게 작동은 하는걸까
     {
         // 기존에 같은 타입의 장비가 있다면 해제
         Equip existingEquip = equips.Find(e => e.equipType == data.equipTypes);
