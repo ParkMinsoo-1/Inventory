@@ -39,7 +39,7 @@ public class UIMain : MonoBehaviour
     {
         UIManager.instance.OpenUI(UIManager.instance.inventoryUI.gameObject);
         currentOpenUI = UIManager.instance.inventoryUI.gameObject;
-        UIManager.instance.inventoryUI.UpdateInventoryUI(GameManager.Instance.player.inventory);
+        //UIManager.instance.inventoryUI.UpdateInventoryUI(GameManager.Instance.player.inventory);
         
         HideButtonPanel();
         ShowBackButton();

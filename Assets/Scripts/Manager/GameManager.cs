@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             SetData(); // 플레이어와 UI 세팅
+            
         }
         else
         {

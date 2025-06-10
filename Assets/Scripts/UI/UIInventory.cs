@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 public class UIInventory : MonoBehaviour
@@ -13,6 +14,7 @@ public class UIInventory : MonoBehaviour
     public GameObject unequipButton;
     public GameObject useButton;
     public GameObject description;
+
     public Text itemNameText;
     public Text itemDescriptionText;
     public Text itemValueText;
@@ -20,15 +22,18 @@ public class UIInventory : MonoBehaviour
     public UISlot selectedSlot;
     public int selectedItem;
 
+    public Equipment equipment;
+
     void Start()
     {
         SetInventoryUI(50);
         UpdateInventoryUI(GameManager.Instance.player.inventory);
         
-        equipButton.SetActive(false);
-        unequipButton.SetActive(false);
-        useButton.SetActive(false);
-        description.SetActive(false);
+        ClearSelectSlot();
+        // equipButton.SetActive(false);
+        // unequipButton.SetActive(false);
+        // useButton.SetActive(false);
+        // description.SetActive(false);
     }
 
     public void SetInventoryUI(int slotCount)
@@ -36,8 +41,8 @@ public class UIInventory : MonoBehaviour
         for (int i = 0; i < slotCount; i++)
         {
             UISlot newSlot = Instantiate(slotPrefab, slotParent);
-            newSlot.SetItem(null); // 초기엔 빈 슬롯
             newSlot.inventory = this;
+            newSlot.SetItem(null); // 초기엔 빈 슬롯
             newSlot.index = i; // 아이템 슬롯에 인덱스 추가
             slotList.Add(newSlot);
         }
@@ -54,7 +59,8 @@ public class UIInventory : MonoBehaviour
             {
                 slotList[i].SetItem(items[i]);
                 itemCount++;
-                Debug.Log($"{slotList[i].name}{slotList[i].index}: {items[i]}"); // 슬롯인덱스에 아이템 있는지 확인용
+                
+                //Debug.Log($"{slotList[i].name}{slotList[i].index}: {items[i]}"); // 슬롯인덱스에 아이템 있는지 확인용
             }
             
             else
@@ -64,10 +70,14 @@ public class UIInventory : MonoBehaviour
         inventoryCounts.text = $"{itemCount} / {slotList.Count}";
         
     }
-
+    
     public void SelectSlot(int index)
     {
-        if (slotList[index].itemData == null) return;
+        if (slotList[index].itemData == null)
+        {
+            ClearSelectSlot();
+            return;
+        }
 
         selectedSlot = slotList[index];
         selectedItem = index;
@@ -88,7 +98,6 @@ public class UIInventory : MonoBehaviour
                 break;
         }
         
-        
         equipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
         unequipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
         useButton.SetActive(selectedSlot.itemData.type == ItemType.Consumable);
@@ -103,5 +112,22 @@ public class UIInventory : MonoBehaviour
         unequipButton.SetActive(false);
         useButton.SetActive(false);
         description.SetActive(false);
+    }
+
+    public void OnClickUseButton()
+    {
+        
+    }
+
+    public void OnclickEquipButton()
+    {
+        equipment.Equip(selectedSlot.itemData);
+        slotPrefab.SetEquipPannel();
+        Debug.Log("equipment equipped");
+    }
+
+    public void OnClickUnequipButton()
+    {
+        
     }
 }

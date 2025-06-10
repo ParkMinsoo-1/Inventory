@@ -10,6 +10,7 @@ public class UISlot : MonoBehaviour
     [SerializeField] private Image itemIcon;
     [SerializeField] private Text itemCountText;
     [SerializeField] private Image backGround;
+    public GameObject equipPannel;
 
     public ItemData itemData;
     public int quantity;
@@ -20,6 +21,7 @@ public class UISlot : MonoBehaviour
     {
         itemData = item;
         RefreshUI();
+        equipPannel.SetActive(false);
     }
 
     public void RefreshUI()
@@ -39,5 +41,10 @@ public class UISlot : MonoBehaviour
     public void OnClickSlot()
     {
         inventory.SelectSlot(index);
+    }
+
+    public void SetEquipPannel()
+    {
+        equipPannel.SetActive(true);
     }
 }

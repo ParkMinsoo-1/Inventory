@@ -10,8 +10,10 @@ public class Player : MonoBehaviour
     public int Attack { get; private set; }
     public int Defense { get; private set; }
     public float Critical { get; private set; }
-
+    
+   
     public List<ItemData> inventory;
+
 
     public void SetPlayerData(string name, int level, float hp, int attack, int defense, float critical )
     {
