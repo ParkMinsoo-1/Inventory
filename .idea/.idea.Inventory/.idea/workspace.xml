@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="96bdf6fd-e71e-49de-9dcb-362dcd01ed5c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inventory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Amor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Amor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Axe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Boots.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Boots.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Helmet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Basic_Helmet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Amor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Amor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Axe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Boots.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Boots.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Helmet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemData/Strong_Helmet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIInventory.cs" afterDir="false" />
     </list>
@@ -21,6 +29,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteEditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/0b/e59a2113/Object.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -105,7 +114,8 @@
       <updated>1749431195382</updated>
       <workItem from="1749431197393" duration="611000" />
       <workItem from="1749438749324" duration="14916000" />
-      <workItem from="1749454070688" duration="4031000" />
+      <workItem from="1749454070688" duration="16940000" />
+      <workItem from="1749526207893" duration="2350000" />
     </task>
     <servers />
   </component>
@@ -119,6 +129,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

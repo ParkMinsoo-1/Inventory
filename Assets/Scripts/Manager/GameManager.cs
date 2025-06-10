@@ -25,7 +25,9 @@ public class GameManager : MonoBehaviour
 
     public void SetData()
     {
-        player = new Player("Player", 5, 120f, 30, 15, 10);
+        GameObject Player = GameObject.FindWithTag("Player");
+        player = Player.AddComponent<Player>();
+        player.SetPlayerData("Player", 5, 120f, 30, 15, 10);
         player.SetBasicItems(basicItems); // Inspector에서 넣어준 기본 아이템 리스트
 
     }

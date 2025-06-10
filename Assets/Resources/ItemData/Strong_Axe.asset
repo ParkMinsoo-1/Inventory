@@ -15,12 +15,13 @@ MonoBehaviour:
   itemName: "\uAC15\uB825\uD55C \uB3C4\uB07C"
   itemDescription: "\uBB34\uC5C7\uC774\uB4E0 \uBD80\uC220 \uC218 \uC788\uC744 \uAC83
     \uAC19\uC2B5\uB2C8\uB2E4."
-  type: 0
+  type: 1
   icon: {fileID: -390620615, guid: c3e9ec10fd9e7414caf423ba4fc9da89, type: 3}
   prefab: {fileID: 2510133271199776472, guid: 21f015539eeedfb41a46cd157e7952dc, type: 3}
+  healValue: 0
   canStack: 0
   maxStack: 0
-  equipTypes: 0
+  equipTypes: 1
   equipAttack: 10
   equipDefense: 0
   equipHealth: 0

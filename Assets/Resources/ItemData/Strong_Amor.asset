@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: "\uB450\uAEBC\uC6B4 \uAC11\uC637"
   itemDescription: "\uD55C\uCE35 \uB2E8\uB2E8\uD574\uC9C4 \uAC11\uC637\uC785\uB2C8\uB2E4."
-  type: 0
+  type: 1
   icon: {fileID: -482715344, guid: c3e9ec10fd9e7414caf423ba4fc9da89, type: 3}
   prefab: {fileID: 4237474705155959466, guid: da771986effb96647a5a1a4775c1cf96, type: 3}
+  healValue: 0
   canStack: 0
   maxStack: 0
-  equipTypes: 1
+  equipTypes: 2
   equipAttack: 0
   equipDefense: 10
   equipHealth: 0

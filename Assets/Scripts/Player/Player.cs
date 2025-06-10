@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     public List<ItemData> inventory;
 
-    public Player(string name, int level, float hp, int attack, int defense, float critical )
+    public void SetPlayerData(string name, int level, float hp, int attack, int defense, float critical )
     {
         Name = name;
         Level = level;
