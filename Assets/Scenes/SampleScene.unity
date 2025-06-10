@@ -2196,7 +2196,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 142a7d09540eaa440845ff0377c65412, type: 2}
   - {fileID: 11400000, guid: 49e13d16557993441b7fb8668279f911, type: 2}
   - {fileID: 11400000, guid: 49e13d16557993441b7fb8668279f911, type: 2}
-  - {fileID: 11400000, guid: 49e13d16557993441b7fb8668279f911, type: 2}
+  - {fileID: 11400000, guid: 06f7f31f20e390347a40d659d4f741b2, type: 2}
+  - {fileID: 11400000, guid: d8f4dae38c2e5e649ad13eb11a86cb69, type: 2}
+  - {fileID: 11400000, guid: 1609bf7ce831cc942924e82529b3bb98, type: 2}
 --- !u!4 &773450637
 Transform:
   m_ObjectHideFlags: 0
@@ -2389,14 +2391,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28db660dd53f78469ecf519091bc733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotPrefab: {fileID: 5848272472615824790, guid: c21ee8c9aed78264094974abc1ea9288, type: 3}
+  slotPrefab: {fileID: 2405121396801324392, guid: c21ee8c9aed78264094974abc1ea9288, type: 3}
   slotParent: {fileID: 327776134}
   inventoryCounts: {fileID: 554029024}
   equipButton: {fileID: 141848076}
   unequipButton: {fileID: 1948130957}
   useButton: {fileID: 205946947}
   description: {fileID: 1965511336}
-  equipPannel: {fileID: 0}
   itemNameText: {fileID: 947288419}
   itemDescriptionText: {fileID: 1142637966}
   itemValueText: {fileID: 920873308}

@@ -21,9 +21,11 @@ public class Equipment : MonoBehaviour
     public Player player;
     public List<Equip> equips = new List<Equip>();
 
+
     void Start()
     {
         player = FindObjectOfType<Player>();
+        
     }
     public void Equip(ItemData data)
     {
@@ -32,11 +34,11 @@ public class Equipment : MonoBehaviour
         if (existingEquip != null)
         {
             UnEquip(existingEquip.itemData);
+   
         }
         // 새 장비 생성 및 착용
         Equip newEquip = new Equip(data);
         equips.Add(newEquip);
-        Debug.Log($"{data.itemName} 추가");
 
     }
 

@@ -47,4 +47,9 @@ public class UISlot : MonoBehaviour
     {
         equipPannel.SetActive(true);
     }
+
+    public void UnEquipPannel()
+    {
+        equipPannel.SetActive(false);
+    }
 }

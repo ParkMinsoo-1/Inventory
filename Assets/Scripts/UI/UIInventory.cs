@@ -122,7 +122,7 @@ public class UIInventory : MonoBehaviour
     public void OnclickEquipButton()
     {
         equipment.Equip(selectedSlot.itemData);
-        slotPrefab.SetEquipPannel();
+        selectedSlot.SetEquipPannel();
         Debug.Log("equipment equipped");
     }
 
