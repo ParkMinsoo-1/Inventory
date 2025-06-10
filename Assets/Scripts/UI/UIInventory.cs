@@ -9,10 +9,21 @@ public class UIInventory : MonoBehaviour
     [SerializeField] private Text inventoryCounts;
     private List<UISlot> slotList = new List<UISlot>();
 
+    public GameObject equipButton;
+    public GameObject unequipButton;
+    public GameObject useButton;
+
+    public UISlot selectedSlot;
+    public int selectedItem;
+
     void Start()
     {
         SetInventoryUI(50);
         UpdateInventoryUI(GameManager.Instance.player.inventory);
+        
+        equipButton.SetActive(false);
+        unequipButton.SetActive(false);
+        useButton.SetActive(false);
     }
 
     public void SetInventoryUI(int slotCount)
@@ -21,6 +32,7 @@ public class UIInventory : MonoBehaviour
         {
             UISlot newSlot = Instantiate(slotPrefab, slotParent);
             newSlot.SetItem(null); // 초기엔 빈 슬롯
+            newSlot.inventory = this;
             newSlot.index = i; // 아이템 슬롯에 인덱스 추가
             slotList.Add(newSlot);
         }
@@ -37,6 +49,7 @@ public class UIInventory : MonoBehaviour
             {
                 slotList[i].SetItem(items[i]);
                 itemCount++;
+                Debug.Log($"{slotList[i].name}{slotList[i].index}: {items[i]}"); // 슬롯인덱스에 아이템 있는지 확인용
             }
             
             else
@@ -44,5 +57,27 @@ public class UIInventory : MonoBehaviour
         }
         
         inventoryCounts.text = $"{itemCount} / {slotList.Count}";
+        
+    }
+
+    public void SelectSlot(int index)
+    {
+        if (slotList[index].itemData == null) return;
+
+        selectedSlot = slotList[index];
+        selectedItem = index;
+        
+        equipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
+        unequipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
+        useButton.SetActive(selectedSlot.itemData.type == ItemType.Consumable);
+    }
+
+    public void ClearSelectSlot()
+    {
+        selectedSlot = null;
+        
+        equipButton.SetActive(false);
+        unequipButton.SetActive(false);
+        useButton.SetActive(false);
     }
 }

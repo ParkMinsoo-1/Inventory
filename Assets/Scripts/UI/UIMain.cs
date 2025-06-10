@@ -77,6 +77,7 @@ public class UIMain : MonoBehaviour
         
         ShowButtonPanel();
         HideBackButton();
+        UIManager.instance.inventoryUI.ClearSelectSlot();
     }
 
     public void SetPlayerUI(Player player)

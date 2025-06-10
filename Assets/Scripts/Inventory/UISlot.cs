@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class UISlot : MonoBehaviour
 {
+    public UIInventory inventory;
+    
     [SerializeField] private Image itemIcon;
     [SerializeField] private Text itemCountText;
     [SerializeField] private Image backGround;
 
-    private ItemData itemData;
+    public ItemData itemData;
     public int quantity;
 
     public int index;
@@ -32,5 +34,10 @@ public class UISlot : MonoBehaviour
             itemIcon.sprite = null;
             itemCountText.text = "";
         }
+    }
+
+    public void OnClickSlot()
+    {
+        inventory.SelectSlot(index);
     }
 }
