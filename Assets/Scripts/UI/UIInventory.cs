@@ -21,6 +21,7 @@ public class UIInventory : MonoBehaviour
         {
             UISlot newSlot = Instantiate(slotPrefab, slotParent);
             newSlot.SetItem(null); // 초기엔 빈 슬롯
+            newSlot.index = i; // 아이템 슬롯에 인덱스 추가
             slotList.Add(newSlot);
         }
         

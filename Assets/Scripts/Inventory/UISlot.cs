@@ -12,6 +12,8 @@ public class UISlot : MonoBehaviour
     private ItemData itemData;
     public int quantity;
 
+    public int index;
+
     public void SetItem(ItemData item)
     {
         itemData = item;
