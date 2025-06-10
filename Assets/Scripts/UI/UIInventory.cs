@@ -12,6 +12,10 @@ public class UIInventory : MonoBehaviour
     public GameObject equipButton;
     public GameObject unequipButton;
     public GameObject useButton;
+    public GameObject description;
+    public Text itemNameText;
+    public Text itemDescriptionText;
+    public Text itemValueText;
 
     public UISlot selectedSlot;
     public int selectedItem;
@@ -24,6 +28,7 @@ public class UIInventory : MonoBehaviour
         equipButton.SetActive(false);
         unequipButton.SetActive(false);
         useButton.SetActive(false);
+        description.SetActive(false);
     }
 
     public void SetInventoryUI(int slotCount)
@@ -67,9 +72,27 @@ public class UIInventory : MonoBehaviour
         selectedSlot = slotList[index];
         selectedItem = index;
         
+        itemNameText.text = selectedSlot.itemData.name;
+        itemDescriptionText.text = selectedSlot.itemData.itemDescription;
+        switch (selectedSlot.itemData.type)
+        {
+            case ItemType.Consumable:
+                itemValueText.text = $"회복량 : {selectedSlot.itemData.healValue.ToString()}";
+                break;
+            case ItemType.Equipable:
+                itemValueText.text =
+                    $"공격력 : {selectedSlot.itemData.equipAttack.ToString()}\n" +
+                    $"방어력 : {selectedSlot.itemData.equipDefense.ToString()}\n" +
+                    $"체력 : {selectedSlot.itemData.equipHealth.ToString()}\n" +
+                    $"치명타 : {selectedSlot.itemData.equipCritical.ToString()}";
+                break;
+        }
+        
+        
         equipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
         unequipButton.SetActive(selectedSlot.itemData.type == ItemType.Equipable);
         useButton.SetActive(selectedSlot.itemData.type == ItemType.Consumable);
+        description.SetActive(true);
     }
 
     public void ClearSelectSlot()
@@ -79,5 +102,6 @@ public class UIInventory : MonoBehaviour
         equipButton.SetActive(false);
         unequipButton.SetActive(false);
         useButton.SetActive(false);
+        description.SetActive(false);
     }
 }
